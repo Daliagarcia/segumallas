@@ -1,0 +1,197 @@
+.titulo-about{
+  text-align: center;
+  margin: 25px;
+}
+
+.main{
+background: url('../../assets/images/bg-textura.png');
+background-repeat: repeat;
+
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* ----- ----- ACERCA DE ----- ----- */
+.main .acerca-de .fotoA{
+	width: 70%;
+	position: absolute;
+	z-index: 0;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+}
+
+.main .acerca-de .fotoA img {
+	width: 100%;
+	vertical-align:top;
+}
+
+.main .acerca-de article {
+	background:$segu-white;
+	padding: 40px;
+	width: 50%;
+	position: relative;
+  top: 40px;
+	z-index: 1;
+  float: right;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+
+}
+/*
+.main .acerca-de article h3 {
+	font-size: 30px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}*/
+
+.subtituloA{
+  font-size: 30px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.main .acerca-de article p {
+	margin-bottom: 15px;
+  padding: 20px;
+  text-align: justify;
+
+}
+
+hr{
+  height: 2px;
+  width: 20%;
+  background-color: $segu-green;
+}
+
+/* ----- ----- DESCRIPCION DEL PRODUCTO ----- ----- */
+
+.caracteristicas .titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.caracteristicas2 {
+  text-align: center;
+}
+.caracteristicas2 i {
+  vertical-align: top;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.primera_linea {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.parrafo {
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+/* ----- ----- GALERIA ----- ----- */
+.titulo-galeria{
+  text-align: center;
+  margin: 25px;
+}
+
+.main .galeria {
+	overflow: hidden;
+}
+
+.main .galeria .foto {
+	width: 25%;
+	float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.main .galeria .foto img {
+	vertical-align: top;
+	width: 100%;
+	opacity: .7;
+}
+
+.main .galeria .foto img:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+/* ----- ----- FORMULARIO CONTACTO ----- ----- */
+.contacto-titulo{
+  text-align: center;
+}
+
+.contacto-subtitulo{
+  text-align: center;
+}
+
+.sectionContact__form{
+  text-align: center;
+}
+
+button{
+  text-align: center;
+}
+
+.contenedor-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- ----- FOOTER ----- ----- */
+.social{
+  background: $segu-black;
+  padding: 20px 0;
+  color: $segu-white;
+  border-bottom: 2px solid  	$segu-white;
+  text-align: center;
+}
+
+.direccion{
+  text-align: center;
+  padding: 10px 0;
+  background:$segu-black;
+  color: $segu-white;
+}
+
+.redes a{
+  color: $segu-white;
+  margin: 0 20px;
+}
+
+.mail{
+  margin-right: 2px;
+}
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px){
+  .main .acerca-de .fotoA {
+		position: relative;
+		width: 100%;
+	}
+
+  .main .acerca-de article {
+		position: relative;
+		width: 100%;
+		top: 1px;
+		transform: translate(0px, 0);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	  .subtituloA {
+		font-size: 34px;
+		margin-bottom: 10px;
+	}
+}
